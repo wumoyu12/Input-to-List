@@ -26,4 +26,5 @@ function UnorderedList()
 function GetItem()
 {
 	num = document.getElementById("txtnum").value;
+	item = document.getElementById("txtitem").value;
 }

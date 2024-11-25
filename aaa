@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="custom.css">
+		<script src="inputarray.js" defer></script>
+		<title>Input to Array</title>
+	</head>
+	<body>
+		<div id="which">
+			<label id="lblnum">What type of list do you want to create?</label><br>
+			<button type="button" id="btnol">Order List</button>
+			or
+			<button type="button" id="btnul">Unordered List</button>
+		</div>
+		
+		<div id="ol" style="display:none;">
+			<h1>Ordered List</h1>
+			<label id="lblname">Please enter list name:</label>
+			<input type="text" id="txtname" placeholder="List Name" autofocus><br>
+			<label id="lblnum">How many items are in your list?</label>
+			<input type="number" id="txtnum" placeholder="Number"><br>
+			<label id="lblitem">Please enter items for your list:</label><br>
+			<input type="text" id="txtitem" autofocus><br>
+			<button type="button" id="btnadd">Add</button>
+			<button type="button" id="btndisplay">Finish</button>
+			<div id="output"></div>
+		</div>
+		
+		<div id="ul" style="display:none;">
+			<h2>Unordered List</h2>
+			<label id="lblname">Please enter list name:</label>
+			<input type="text" id="txtname" placeholder="List Name" autofocus><br>
+			<label id="lblnum">How many items are in your list?</label>
+			<input type="number" id="txtnum" placeholder="Number"><br>
+			<label id="lblitem">Please enter items for your list:</label><br>
+			<input type="text" id="txtitem" autofocus><br>
+			<button type="button" id="btnadd">Add</button>
+			<button type="button" id="btndisplay">Finish</button>
+			<div id="output"></div>
+		</div>
+	</body>
+</html>

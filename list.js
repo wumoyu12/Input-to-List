@@ -1,30 +1,39 @@
 window.addEventListener("load", addListener);
-
+var item;
+let items = [];
 function addListener()
 {
-    /*document.getElementById("which").style.display = "block";
-    document.getElementById("ol").style.display = "none";
-	/*document.getElementById("ul").style.display = "none";*/
-	document.getElementById("btnol").addEventListener("click", OrderList);
-    document.getElementById("btnul").addEventListener("click", UnorderedList);
+	document.getElementById("btnadd").addEventListener("click", Add);
+	document.getElementById("btndisplay").addEventListener("click", Display);
 }
 
-function OrderList()
+function Add()
 {
-	/*document.getElementById("which").style.display = "none";
-	document.getElementById("ol").style.display = "block";*/
-	GetItem()
-}
-
-function UnorderedList()
-{
-	/*document.getElementById("which").style.display = "none";
-	document.getElementById("ul").style.display = "block";*/
-	GetItem()
-}
-
-function GetItem()
-{
-	num = document.getElementById("txtnum").value;
 	item = document.getElementById("txtitem").value;
+	CheckItem()
+	document.getElementById("txtitem").value = "";
+	items.push(item)
+}
+
+function CheckItem()
+{
+	if (item == "")
+	{
+		alert("You have to enter something");
+	}
+	else
+	{
+		alert("Added" + " " + item);
+	}
+}
+
+function Display()
+{
+	length = items.length;
+	for(let i=0; i<length; i++)
+	{
+		let li = document.createElement("li");
+		li.innerText = items[i];
+		list.appendChild(li);	
+	}
 }

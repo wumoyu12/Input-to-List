@@ -30,7 +30,8 @@ function CheckItem()
 
 function Display()
 {
-	
+	document.getElementById("Ask").style.display = "none";
+	document.getElementById("display").style.display = "block";
 	length = items.length;
 	for(let i=0; i<length; i++)
 	{

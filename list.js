@@ -20,6 +20,7 @@ function CheckItem()
 	if (item == "")
 	{
 		alert("You have to enter something");
+		Add();
 	}
 	else
 	{
@@ -29,6 +30,7 @@ function CheckItem()
 
 function Display()
 {
+	
 	length = items.length;
 	for(let i=0; i<length; i++)
 	{

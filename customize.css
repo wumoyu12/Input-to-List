@@ -1,0 +1,22 @@
+body 
+{
+background-color: lightblue;
+}
+
+input
+{
+  text-align: center;
+  color: black;
+}
+
+
+button
+{
+  background-color: lightblue;
+  color: darkslateblue;
+}
+
+input
+{
+  width: 50%;
+}

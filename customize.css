@@ -1,14 +1,8 @@
 body 
 {
-background-color: lightblue;
-}
-
-input
-{
-  text-align: center;
+  background-color: lightblue;
   color: black;
 }
-
 
 button
 {

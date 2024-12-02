@@ -1,23 +1,23 @@
 body 
 {
-background-color: lightblue;
-font-family: times roman;
+	background-color: lightblue;
+	font-family: times roman;
 }
 
 input
 {
-  text-align: center;
-  color: black;
+	text-align: center;
+	color: black;
 }
 
 
 button
 {
-  background-color: lightblue;
-  color: darkslateblue;
+	background-color: lightblue;
+	color: darkslateblue;
 }
 
 input
 {
-  width: 50%;
+	width: 50%;
 }

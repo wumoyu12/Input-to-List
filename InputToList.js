@@ -19,6 +19,7 @@ function Add()
 	}
 
 	document.getElementById("txtitem").value = "";
+	document.getElementById("txtitem").focus();
 }
 
 function CheckItem(item)

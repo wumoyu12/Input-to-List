@@ -47,6 +47,7 @@ function Display()
 	if (items.length < 2)
 	{
 		alert("You need to enter at least two things before displaying the list.");
+		document.getElementById("txtitem").focus();
 		return;
 	}
 
